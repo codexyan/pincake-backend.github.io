@@ -8,7 +8,7 @@ const response = require('./response')
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.send("Express JS Connected")
+  res.send(200, "Express JS Connected", res)
 }) 
 
 app.get('/mahasiswa', (req, res) => {
